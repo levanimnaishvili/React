@@ -65,7 +65,6 @@ class Home extends React.Component {
   render(): React.ReactNode {
     return (
       <>
-        <h1>Home Page</h1>
         <Search itemSearchHandler={this.updateBySearch} />
         <ProductList items={this.state.searchState || []} />
       </>

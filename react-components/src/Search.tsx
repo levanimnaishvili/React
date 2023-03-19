@@ -1,4 +1,5 @@
 import React from 'react';
+import classes from './Search.module.css';
 
 type TProps = {
   itemSearchHandler: (value: string) => void;
@@ -38,8 +39,8 @@ export default class Search extends React.Component<TProps> {
   }
   render() {
     return (
-      <div>
-        <input
+      <div >
+        <input className={classes.searchContainer}
           type="text"
           name=""
           id=""

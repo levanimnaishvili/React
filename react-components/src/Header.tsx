@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom';
+import classes from './Header.module.css';
 
 class Header extends React.Component {
   constructor(props: {}) {
@@ -7,12 +8,17 @@ class Header extends React.Component {
   }
 
   render(): React.ReactNode {
-    return <>
-    <h1>Header</h1>
-    <Link to='/about'>About</Link>
-    <Link to='/'>Home</Link>
-    <Outlet />
-    </>;
+    return (
+      <div className={classes.wrapper}>
+        <h1>Brand Shop</h1>
+        <nav>
+          <Link to="/about">About</Link>
+          <Link to="/">Home</Link>
+        </nav>
+
+        <Outlet />
+      </div>
+    );
   }
 }
 
