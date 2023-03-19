@@ -7,6 +7,7 @@ class About extends React.Component {
   }
 
   render(): React.ReactNode {
+
     return <>
       <h1>About</h1>
       <p>Go back!</p>
